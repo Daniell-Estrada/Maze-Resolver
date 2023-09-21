@@ -78,15 +78,8 @@ class MazeValidator:
 
         maze[s_row][s_col] = 0
 
-    def possible_routes(self):
-        print('Rutas posibles: ', len(self.rutas))
-
-        for i in range(len(self.rutas)):
-            print(f'Ruta {i +1}', self.rutas[i])
-
     def ouput(self):
         if self.maze_verify():
-            # self.possible_routes()
             maze = self.maze
             rutas = self.rutas
 
