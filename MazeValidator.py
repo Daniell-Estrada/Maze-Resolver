@@ -74,7 +74,7 @@ class MazeValidator:
         pos = [(1, 0), (-1, 0), (0, 1), (0, -1)]
         for i in pos:
             starts = [s_row + i[0], s_col + i[1]]
-            self.solve(maze, starts, ends, ruta + [[s_row, s_col]])
+            self.solve(maze, starts, ends, [*ruta, [s_row, s_col]])
 
         maze[s_row][s_col] = 0
 
